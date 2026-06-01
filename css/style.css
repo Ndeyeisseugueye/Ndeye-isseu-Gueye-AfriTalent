@@ -1,35 +1,33 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 
 /* section hero */
 #hero{
-    height: 45vw;
+    margin-top: 0;
+    padding-top: 0;
+    /* height: 50vw;     */
     background-image:linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/arrierplan.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     color: #fff;
-    /* margin-top: 5; */
 }
+
 
 
 #hero h1{
-    /* margin-top: 3rem; */
     font-size: 4.3em;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 1rem 2em 0 2em;
+    /* margin: 1rem 2em 0 2em; */
     font-weight: 200;
+    margin-right:5rem ;
 }
 
-
-#hero a{
-    margin-bottom: 5rem;
-}
 
 
 :root{
@@ -44,6 +42,7 @@
 
 /* le corp */
 body{
+    padding-top: 0;
     background-color: var(--background-color);
     color: var(--texte-color);
     font-family: var(--font-corp);
@@ -51,8 +50,20 @@ body{
 }
 .navbar{
     background-color: white;
+    color: #000;
 }
 
+
+
+#navMenu ul{
+    gap: 20px;
+}
+
+
+
+.navbar-brand{
+    font-size: 3rem;
+}
 h1,h2,h3,h5{
     font-weight: 700;
     font-family: var(--font-titre);
@@ -66,36 +77,21 @@ span{
     color:rgb(116, 192, 252);
 }
 
-.card{
-    margin-bottom: 20px;
-}
 footer{
     padding: 20px 0;
 }
 
-section{
-    padding: 30px 0;
-}
-/* COMMENT ÇA MARCHE */
-#marche{
-    height: 90vh;
-}
-
-
-/* page2 */
-/* section freelance */
-#freelances{
-    gap: 3rem;
-}
 
 
 
 
 .anime{
+    /* margin-top: 15rem; */
     border: none;
     border-radius:20px;
     margin-right: 5rem;
-    background-color:#fff;
+    background-color:#162437;
+    color: #fff;
     
 
 }
@@ -103,7 +99,6 @@ section{
 .anime:hover{
     transform: translateY(-5px);
     box-shadow: 0 30px 20px rgb(228, 237, 244);
-    background-color: #162437;
     color:white ;
     transition: 3s;
 
@@ -114,10 +109,13 @@ section{
 /* page1 */
 /* comment ca marche */
 #marche{
-    height: 50vw;
+    /* height: 40vw; */
+    margin-top: 3rem;
+}
+#marche h1{
+    
     margin-top: 8rem;
 }
-
 
 .bentogrid{
     display: grid;
@@ -166,8 +164,8 @@ section{
 /* catrgories de service */
 
 .categories{
-    height: 50vw;
-    margin-bottom: 8rem;
+    /* height: 50vw; */
+    margin-top: 3rem;
 }
 
 .service{
@@ -176,7 +174,7 @@ section{
     padding: 25px;
     transition: 4s;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    gap: 5rem;
+    gap: 3rem;
 }
 
 
@@ -191,7 +189,7 @@ section{
 /* carroussel */
 
 #temoins{
-    height: 72vh;
+    /* height: 72vh; */
     text-align: center;
     width: 100% ;
     /* padding: 20px; */
@@ -213,11 +211,11 @@ section{
 #cta{
     margin-top: 4rem;
     text-align: center;
-    height: 25vh;
+    /* height: 25vh; */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     background: #fff;
     border-radius: 40px;
-    /* transition: 5s; */
+    padding: 30px;
      background-color:  rgb(116, 192, 252);
 }
 
@@ -231,3 +229,233 @@ section{
     text-decoration: none;
     border-radius: 15px;
 }
+
+
+
+
+
+/* page2 */
+/* section freelance */
+
+
+#freelances{
+    text-align: center;
+    gap: 3rem;
+    margin-right: 5rem;
+}
+
+#freelances select{
+    margin-top: 3rem;
+}
+
+
+.profil {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 40px;
+    transition: 4s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.profil:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(18, 199, 214, .25);
+}
+
+
+
+#freelances img{
+    margin-left: 4rem;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #8beaf2;
+}
+
+
+
+
+
+/* page 3 */
+/* TARIF */
+
+#tarifs{
+    margin-left: 6rem;
+}
+.tarif {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    transition: 4s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+     border: 3px solid #8beaf2;
+}
+
+
+
+.tarif:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(18, 199, 214, .25);
+}
+
+
+
+/* page5 */
+/* CONTACT */
+.contacts{
+    background-color: #f5f7fa;
+    gap: 50px  ;
+
+
+}
+
+/* iframe{
+    margin-right: 5rem;
+} */
+
+
+.info{
+    background: #062b3d;
+    color: white;
+    padding: 40px;
+    border-radius: 30px;
+    height: 100%;
+    margin-right: 4rem;
+}
+
+.forme{
+    background: white;
+    padding: 60px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+
+}
+
+
+.form-control{
+    border-radius: 15px;
+    padding: 12px;
+}
+
+
+
+/* page4 */
+/* Notre Histoire */
+#histoire{
+    
+
+}
+
+#histoire img{
+    margin-right: 5rem;
+    border-radius: 50%;
+    background-size:cover;
+    background-color: #8beaf2;
+}
+
+#histoire p{
+    margin-right: 5rem;
+}
+
+
+#equipe{
+   
+}
+
+.notre{
+    margin-right:4rem ;
+    background: white;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border: none;
+}
+
+
+/* Nos valeurs */
+
+#valeurs{
+
+}
+
+
+.valeur{
+   border-radius: 25px;
+    margin-left: 5rem;
+    transition: 4s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+.valeur:hover{
+     transform: translateY(-10px);
+     box-shadow: 0 20px 40px rgba(18, 199, 214, .25);
+}
+
+
+
+/* chiffres clés */
+
+.chiffre{
+    border-radius: 15px;
+    margin-left: 1rem;
+    transition: 4s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+/* HERO */
+@media screen and (max-width:768px){
+    #hero{
+        padding: 80px 20px;
+        text-align: center;
+    }
+    #hero h1{
+        font-size: 2.5rem;
+    }
+    #hero p{
+        font-size: 1rem;
+    }
+    #hero a{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+
+/* navbar */
+
+@media screen and (max-width:768px){
+    .navbar{
+        text-align: center;
+        gap: 10px;
+        padding-top: 15px;
+    }
+    .navbar .btn{
+        margin-top: 10px;
+    }
+}
+
+
+
+
+/* section hero */
+@media screen and (max-width:375px){
+    .navbar{
+        text-align:center;
+        gap: 10px;
+        padding-top: 15px;
+
+
+    }
+    .navbar btn{
+        margin-top: 10px;
+    }
+} 
+    
+

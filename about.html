@@ -20,43 +20,42 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
 ></script> 
 <!-- Votre script JavaScript --> 
 <script src="js/main.js"></script>
-<nav class="navbar navbar-expand-lg fixed-top"id="navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand me-auto" href="#"></a>
-     <h1>Afri<span>Talent</span></h1>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="freelances.html"> Freelances</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="tarifs.html">Tarifs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="about.html"> À propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="blog.html"> Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="contact.html"> Contact</a>
-          </li>
-        </ul>
-        <div>
+<nav class="navbar navbar-expand-lg"> 
+<div class="container"> 
+<a class="navbar-brand" href="index.html">Afri<span>Talent</span></a> 
+<button class="navbar-toggler" type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navMenu" 
+aria-controls="navMenu" 
+aria-expanded="false" 
+aria-label="Toggle navigation"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<div class="collapse navbar-collapse" id="navMenu"> 
+<ul class="navbar-nav ms-auto"> 
+<li class="nav-item"><a class="nav-link active" 
+href="index.html">Accueil</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="freelances.html">Freelances</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="tarifs.html">Tarifs</a></li> 
+<li class="nav-item"><a class="nav-link" href="about.html">A 
+propos</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="contact.html">Contact</a></li> 
+</ul> 
+</div> 
+</div> 
+<div>
             <a class="btn btn-info "href="">Rejoindre AfriTalent</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
+</div>
+
+</nav> 
+
 <main>
  <!-- Notre Histoire  -->
-  <section>
-    <div class="pt-5 mt-5 col d-flex flex-row">
+  <section id="histoire">
+    <div class="col d-flex flex-row">
       <div class="col p-3">
         <h1>Notre histoire</h1>
         Né à Dakar en 2024,AfriTalent est parti <br> d'un constat simple:
@@ -72,12 +71,12 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
     </div>
   </section>
 <!-- L'équipe  -->
-  <section>
-    <h1>Notre équipe</h1>
+  <section id="equipe">
+    <h1 class= "text-center">Notre équipe</h1>
     <div class="row row-cols-1 row-cols-md-2 col col-14 gap-3">
-      <div class="card" style="width: 18rem;">
-        <img src="images/membre2.jpg"class="card-img-top"style="height:300px; object-fit:center;" alt="">
-        <div class="card-body cover">
+      <div class="card notre" style="width: 15rem;">
+        <img src="images/membre2.jpg"class="card-img-top"style="height:200px" alt="">
+        <div class="card-body">
           <h5 class="card-title">Aissatou Ba</h5>
           <p class="card-text">CEO</p>
           <a href="http:www.instagram.com">
@@ -85,9 +84,9 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
           </a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="images/membre4.jpg"class="card-img-top"style="height:300px; object-fit:center;" alt="">
-        <div class="card-body cover">
+      <div class="card notre" style="width: 15rem;">
+        <img src="images/membre4.jpg"class="card-img-top"style="height:200px" alt="">
+        <div class="card-body">
           <h5 class="card-title">Cheikh Fall</h5>
           <p class="card-text">Designer</p>
           <a href="http:www.snapchat.com">
@@ -95,9 +94,9 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
           </a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="images/membre3.jpg"class="card-img-top"style="height:300px; object-fit:center;" alt="">
-        <div class="card-body cover">
+      <div class="card notre" style="width: 15rem;">
+        <img src="images/membre3.jpg"class="card-img-top"style="height:200px" alt="">
+        <div class="card-body">
           <h5 class="card-title">Mariama Sarr</h5>
           <p>marketing</p>
             <a href="http:www.facebook.com">
@@ -105,9 +104,9 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
             </a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="images/membre1.jpg"class="card-img-top"style="height:300px; object-fit:center;" alt="">
-        <div class="card-body cover">
+      <div class="card notre" style="width: 15rem;">
+        <img src="images/membre1.jpg"class="card-img-top"style="height:200px" alt="">
+        <div class="card-body">
           <h5 class="card-title">Mouhamed Aidara</h5>
           <p>Commuty Manager</p>
           <a href="http:www.instagram.com">
@@ -119,43 +118,43 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
     </div>
   </section>
 <!-- Nos valeurs  -->
- <section>
-  <h1>Nos valeurs </h1>
+ <section id="valeurs">
+  <h1 class="text-center">Nos valeurs </h1>
   <div class="row row-cols-1 row-cols-md-2 col col-12 gap-3 p-5">
-      <div class="card p-3" style="width: 16rem;">
-        <i class="bi bi-lightbulb fa-2x" style="color: rgb(155, 21, 160);"></i>
+      <div class="card valeur" style="width: 15rem;">
+        <i class="bi bi-lightbulb fa-2x" style="color: #8beaf2;"></i>
           <h5 class="card-title">Innovation</h5>
           <p class="card-text">Nous créons des solutions de demain avec les technologies d'aujourd'hui</p>
       </div>
-      <div class="card" style="width: 16rem;">
-        <i class="bi bi-universal-access fa-2x" style="color: rgb(155, 21, 160);"></i>
+      <div class="card valeur" style="width: 15rem;">
+        <i class="bi bi-universal-access fa-2x" style="color:#8beaf2;"></i>
           <h5 class="card-title">Accessibilité</h5>
           <p class="card-text">Nous rendons le freelance accessible à tous en afreique</p>
       </div>
-      <div class="card" style="width: 16rem;">
-        <i class="bi bi-people-fill fa-2x" style="color: rgb(155, 21, 160);"></i>
+      <div class="card valeur" style="width: 15rem;">
+        <i class="bi bi-people-fill fa-2x" style="color:#8beaf2;"></i>
           <h5 class="card-title">Communauté</h5>
           <p class="card-text">Nous crayons à la force de la communauté</p>
       </div>
   </div>
  </section>
   <!-- Chiffres clés  -->
-   <section>
-    <h1> Chiffres clés </h1>
+   <section id="chiffresclés">
+    <h1 class="text-center"> Chiffres clés </h1>
     <div class="row row-cols-1 row-cols-md-2 col col-12 gap-3 p-5">
-      <div class="card p-3" style="width: 16rem;">
+      <div class="card chiffre" style="width: 16rem;">
           <h5 class="card-title">150000+</h5>
           <p class="card-text">Membres actifs</p>
       </div>
-      <div class="card p-3" style="width: 16rem;">
+      <div class="card chiffre" style="width: 16rem;">
           <h5 class="card-title">34</h5>
           <p class="card-text">Pays représentés</p>
       </div>
-      <div class="card p-3" style="width: 16rem;">
+      <div class="card chiffre" style="width: 16rem;">
           <h5 class="card-title">4.5/5</h5>
           <p class="card-text">NOte moyenne</p>
       </div>
-      <div class="card p-3" style="width: 16rem;">
+      <div class="card chiffre" style="width: 16rem;">
           <h5 class="card-title">98%</h5>
           <p class="card-text">Taux de Satisfaction</p>
       </div>

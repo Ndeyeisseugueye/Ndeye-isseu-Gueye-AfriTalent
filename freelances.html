@@ -22,43 +22,41 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
 ></script> 
 <!-- Votre script JavaScript --> 
 <script src="js/main.js"></script>
-<nav class="navbar navbar-expand-lg fixed-top"id="navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand me-auto" href="#"></a>
-     <!-- <img src="images/logo.png" alt="" height="100px" h> -->
-      <h1>Afri<span>Talent</span></h1>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="freelances.html"> Freelances</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="tarifs.html">Tarifs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="about.html"> À propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="blog.html"> Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="contact.html"> Contact</a>
-          </li>
-        </ul>
-        <div>
-            <a class="btn btn-info" href="">Rejoindre AfriTalent</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
+<nav class="navbar navbar-expand-lg"> 
+<div class="container"> 
+<a class="navbar-brand" href="index.html">Afri<span>Talent</span></a> 
+<button class="navbar-toggler" type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navMenu" 
+aria-controls="navMenu" 
+aria-expanded="false" 
+aria-label="Toggle navigation"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<div class="collapse navbar-collapse" id="navMenu"> 
+<ul class="navbar-nav ms-auto"> 
+<li class="nav-item"><a class="nav-link active" 
+href="index.html">Accueil</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="freelances.html">Freelances</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="tarifs.html">Tarifs</a></li> 
+<li class="nav-item"><a class="nav-link" href="about.html">A 
+propos</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="contact.html">Contact</a></li> 
+</ul> 
+</div> 
+</div> 
+<div>
+            <a class="btn btn-info "href="">Rejoindre AfriTalent</a>
+</div>
+
+</nav> 
 <main>
 <section>
-<div class="pt-5 mt-5">
+<div>
+   <h1 class= "text-center">Nos freelances</h1>
   <select class="form-select">
           <option value="">Tous</option>
           <option>Développement Web</option>
@@ -69,9 +67,9 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
           <option value="">DevOps & Cloud</option>
   </select>
 </div>
-  <div class="row row-cols-1 row-cols-md-3 g-4 pt-5 mt-5 col col-9 ms-5" id="freelances">
-    <div class="card" style="width: 18rem;">
-        <img src="images/profil8 (2).jpg"class="card-img-top"style="height:300px; object-fit:cover;" alt="">
+  <div class="row row-cols-1 row-cols-md-3 g-4 pt-3 mt-3 col col-9" id="freelances">
+    <div class="card profil" style="width: 18rem;">
+        <img src="images/profil8 (2).jpg"class="height:200px";  alt="">
     <div class="card-body ">
       <h5 class="card-title">Fatou Ndiaye</h5>
       <p class="card-text">Developpeuse Web</p>
@@ -87,8 +85,8 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
       <a href="#" class="btn btn-info">Voir le profil</a>
     </div>
   </div>
-  <div class="card " style="width: 18rem;">
-      <img src="images/profile3.jpg"style="height:300px; object-fit:cover;" alt="">
+  <div class="card profil" style="width: 18rem;">
+      <img src="images/profile3.jpg" class="height:200px"; alt="">
   <div class="card-body">
     <h5 class="card-title">Aicha Fall</h5>
     <p class="card-text">Design UI/UX</p>
@@ -104,8 +102,8 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
     <a href="#" class="btn btn-info">Voir le profile</a>
   </div>
 </div>
-  <div class="card" style="width: 18rem;">
-      <img src="images/profile 3.jpg"style="height:300px; object-fit:cover;" alt="">
+  <div class="card profil" style="width: 18rem;">
+      <img src="images/profile 3.jpg"class="height: 200px"; alt="">
   <div class="card-body">
     <h5 class="card-title">Moussa Diallo</h5>
     <p class="card-text">Spécialité Marketing</p>
@@ -121,8 +119,8 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
     <a href="#" class="btn btn-info">Voir le profile</a>
   </div>
 </div> 
-  <div class="card" style="width: 18rem;">
-      <img src="images/profil9.jpg"style="height:300px; object-fit:cover;" alt="">
+  <div class="card profil" style="width: 18rem;">
+      <img src="images/profil9.jpg"class="height:200px"; alt="">
   <div class="card-body">
     <h5 class="card-title">Fatima Diop</h5>
     <p class="card-text">Rédactrice Wed</p>
@@ -138,8 +136,8 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
     <a href="#" class="btn btn-info">Voir le profile</a>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
-    <img src="images/profil8.jpg"style="height:300px; object-fit:cover;" alt="">
+<div class="card profil" style="width: 18rem;">
+    <img src="images/profil8.jpg"class="height:300px;" alt="">
   <div class="card-body">
     <h5 class="card-title">Sophia Rachid</h5>
     <p>Marketing Digital</p>
@@ -155,8 +153,8 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
     <a href="#" class="btn btn-info">Voir le profile</a>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
-    <img src="images/profil7 (2).jpg"style="height:300px; object-fit:cover;" alt="">
+<div class="card profil" style="width: 18rem;">
+    <img src="images/profil7 (2).jpg"class="height:300px;" alt="">
   <div class="card-body">
     <h5 class="card-title">Astou Mbaye</h5>
     <p>Développeuse mobiles</p>
@@ -172,8 +170,8 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
     <a href="#" class="btn btn-info">Voir le profile</a>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
-    <img src="images/profil4 (2).jpg"style="height:300px; object-fit:cover;" alt="">
+<div class="card profil" style="width: 18rem;">
+    <img src="images/profil4 (2).jpg"class="height:300px; " alt="">
   <div class="card-body">
     <h5 class="card-title">Aicha Fofana</h5>
     <p>Designer</p>
@@ -189,8 +187,8 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
     <a href="#" class="btn btn-info">Voir le profile</a>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
-    <img src="images/profil5 (2).jpg"style="height:300px; object-fit:cover;" alt="">
+<div class="card profil" style="width: 18rem;">
+    <img src="images/profil5 (2).jpg"class="height:300px;" alt="">
   <div class="card-body">
     <h5 class="card-title">Alex </h5>
     <p>Graphiste</p>
@@ -208,8 +206,8 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
     <a href="#" class="btn btn-info">Voir le profile</a>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
-    <img src="images/profil6 (2).jpg"style="height:300px; object-fit:cover;" alt="">
+<div class="card profil" style="width: 18rem;">
+    <img src="images/profil6 (2).jpg"class="height:300px;" alt="">
   <div class="card-body">
     <h5 class="card-title">Amadou Traoré</h5>
     <p class="card-text">Developpeur Full</p>

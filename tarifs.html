@@ -21,59 +21,57 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
 ></script> 
 <!-- Votre script JavaScript --> 
 <script src="js/main.js"></script>
-<nav class="navbar navbar-expand-lg fixed-top"id="navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand me-auto" href="#"></a>
-     <h1>Afri<span>Talent</span></h1>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="freelances.html"> Freelances</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="tarifs.html">Tarifs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="about.html"> À propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="blog.html"> Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="contact.html"> Contact</a>
-          </li>
-        </ul>
-        <div>
-            <a class="btn btn-info" href=""> Rejoindre AfriTalent </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
+<nav class="navbar navbar-expand-lg"> 
+<div class="container"> 
+<a class="navbar-brand" href="index.html">Afri<span>Talent</span></a> 
+<button class="navbar-toggler" type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navMenu" 
+aria-controls="navMenu" 
+aria-expanded="false" 
+aria-label="Toggle navigation"> 
+<!-- <span class="navbar-toggler-icon"></span>  -->
+</button> 
+<div class="collapse navbar-collapse" id="navMenu"> 
+<ul class="navbar-nav ms-auto"> 
+<li class="nav-item"><a class="nav-link active" 
+href="index.html">Accueil</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="freelances.html">Freelances</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="tarifs.html">Tarifs</a></li> 
+<li class="nav-item"><a class="nav-link" href="about.html">A 
+propos</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="contact.html">Contact</a></li> 
+</ul> 
+</div> 
+</div> 
+<div>
+            <a class="btn btn-info "href="">Rejoindre AfriTalent</a>
+</div>
+
+</nav> 
 <main>
-  <section>
-        <h1 class="pt-5 mt-5 text-center  mt-5">choississez Votre Plan</h1>
+  <section id="tarifs">
+        <h1 class="text-center">choississez Votre Plan</h1>
         <p class="text-center">
               Des Tarifs adaptés à vos besoins
         </p>
-        <div  class="row row-cols-1 row-cols-md-2 col col-10 gap-3 p-5">
-            <div class="card" style="width: 18rem; height: 20rem;">
+        <div  class="row row-cols-1 row-cols-md-2 col col-10 gap-3">
+            <div class="card tarif" style="width: 18rem; height: 25 rem;">
               <div class="card-body">
                 <h2 class="card-title">Gratuit</h2>
                 <h3>0 Fcfa</h3>
                 <p><i class="bi bi-check fa-2x" style="color: rgb(20, 224, 255);"></i>profil basique</p>
                 <p><i class="bi bi-check fa-2x" style="color: rgb(20, 224, 255);"></i>Accée limité</p>
                 <p><i class="bi bi-check fa-2x" style="color: rgb(20, 224, 255);"></i>Support prioritaire</p>
-                <i class="bi bi-check fa-2x" style="color: rgb(20, 224, 255);"></i>Création de profil<br>
+                <i class="bi bi-check fa-2x" style="color: rgb(20, 224, 255);"></i>Création de profil</p>
                
                 <a href="#" class="btn btn-info">Choisir</a>
               </div>
             </div>
-            <div class="card" style="width: 18rem; height: 20rem;">
+            <div class="card tarif" style="width: 18rem; height: 25rem;">
               <div class="card-body">
                 <h2 class="card-title">pro</h2>
                 <h3>15 000 Fcfa/mois</h3>
@@ -85,7 +83,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
                 <a href="#" class="btn btn-info">Choisir</a>
               </div>
             </div>
-            <div class="card" style="width: 18rem; height: 20rem;">
+            <div class="card tarif" style="width: 18rem; height: 25rem;">
               <div class="card-body">
                 <h2 class="card-title">Entreprise</h2>
                 <h3>50 000 Fcfa/mois</h3>

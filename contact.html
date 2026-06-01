@@ -21,53 +21,53 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
 ></script> 
 <!-- Votre script JavaScript --> 
 <script src="js/main.js"></script>
-<nav class="navbar navbar-expand-lg fixed-top"id="navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand me-auto" href="#"></a>
-     <h1>Afri<span>Talent</span></h1>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="freelances.html"> Freelances</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="tarifs.html">Tarifs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="about.html"> À propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="blog.html"> Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ex-lg-2 active" href="contact.html"> Contact</a>
-          </li>
-        </ul>
-        <div>
-            <a  class="btn btn-info "href=""> Rejoindre AfriTalent </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
+<nav class="navbar navbar-expand-lg "> 
+<div class="container"> 
+<a class="navbar-brand" href="index.html">Afri<span>Talent</span></a> 
+<button class="navbar-toggler" type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navMenu" 
+aria-controls="navMenu" 
+aria-expanded="false" 
+aria-label="Toggle navigation"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<div class="collapse navbar-collapse" id="navMenu"> 
+<ul class="navbar-nav ms-auto"> 
+<li class="nav-item"><a class="nav-link active" 
+href="index.html">Accueil</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="freelances.html">Freelances</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="tarifs.html">Tarifs</a></li> 
+<li class="nav-item"><a class="nav-link" href="about.html">A 
+propos</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="contact.html">Contact</a></li> 
+</ul> 
+</div> 
+</div> 
+<div>
+            <a class="btn btn-info "href="">Rejoindre AfriTalent</a>
+</div>
+
+</nav> 
+  
 <main>
    <!-- contact -->
-  <section>
-  <div class="container my-5">
+  <section class="contacts">
+  <div class="container">
     <div class="row">
         <div class="col-md-8">
           <h1>Contactez-nous</h1>
           <p>Une  question ? Nous sommes là pour vous aidez</p>
           <form>
 
-      <div class="row">
-        <div class="col-md-6 mb-3">
+      <div class="row gx-6">
+        <div class="col-md-6 mb-3 forme">
           <label for="nom" class="form-label">Nom</label>
           <input type="text" class="form-control"placeholder="Votre nom">
+
           <label for="prenom" class="form-label">Prénom</label>
           <input type="text"class="form-control" placeholder="Votre prénom">
         
@@ -84,25 +84,25 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.j
     
         <label for="message" class="form-label">Message</label>
         <textarea id="message" class="form-control" rows="4" placeholder="Votre message (minimum 20 caractères)"></textarea>
-
+        <br>
       <button type="submit" class="btn btn-info">Envoyer le message</button>
 
 
     </form>
   </div> 
-    <div class="col-md-4 my-4 ms-5 ">
+    <div class="col-md-4 my-4 ms-5 info">
       <h4 class="md-4 ">Nos coordonnées</h4>
       
         <strong>Email</strong>
 
-      <p>AfriTalent5@gmail.com</p>
+      <p>✉️ AfriTalent5@gmail.com</p>
     
 
       <strong>Téléphone</strong>
-      <p>77 288 14 22</p>
+      <p>📞 77 288 14 22</p>
 
       <strong>Adresse</strong>
-      <p>Dakar, Sénégal</p>
+      <p>📍 Dakar, Sénégal</p>
   
       <strong>Horaires</strong>
       <p>Lundi-Vendredi : 9h - 18h</p>
