@@ -1,278 +1,319 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>AfriTalent — Accueil</title> 
-<!-- Bootstrap 5 via CDN : feuille de style --> 
-<link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-rel="stylesheet"> 
-<!-- Votre feuille de style personnelle --> 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
- 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriTalent — Accueil</title>
+  <!-- Bootstrap 5 via CDN : feuille de style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Votre feuille de style personnelle -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
 </head>
-<body> 
-<!-- Le contenu de la page sera ajoute ici --> 
-<!-- Bootstrap 5 via CDN : script JavaScript --> 
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-<!-- Votre script JavaScript --> 
-<script src="js/main.js"></script>
-<nav class="navbar navbar-expand-lg"> 
-<div class="container"> 
-<a class="navbar-brand" href="index.html">Afri<span>Talent</span></a> 
-<button class="navbar-toggler" type="button" 
-data-bs-toggle="collapse" 
-data-bs-target="#navMenu" 
-aria-controls="navMenu" 
-aria-expanded="false" 
-aria-label="Toggle navigation"> 
-<span class="navbar-toggler-icon"></span> 
-</button> 
-<div class="collapse navbar-collapse" id="navMenu"> 
-<ul class="navbar-nav ms-auto"> 
-<li class="nav-item"><a class="nav-link active" 
-href="index.html">Accueil</a></li> 
-<li class="nav-item"><a class="nav-link" 
-href="freelances.html">Freelances</a></li> 
-<li class="nav-item"><a class="nav-link" 
-href="tarifs.html">Tarifs</a></li> 
-<li class="nav-item"><a class="nav-link" href="about.html">A 
-propos</a></li> 
-<li class="nav-item"><a class="nav-link" 
-href="contact.html">Contact</a></li> 
-</ul> 
-</div> 
-</div> 
-<div>
-            <a class="btn btn-info "href="">Rejoindre AfriTalent</a>
-</div>
 
-</nav> 
-<main>
-<section>
-<div>
-   <h1 class= "text-center">Nos freelances</h1>
-  <select class="form-select">
-          <option value="">Tous</option>
-          <option>Développement Web</option>
-          <option> Design UI/UX</option>
-          <option> Marketing Digital</option>
-          <option value=""> Data & IA</option>
-          <option value="">Rédaction Tech</option>
-          <option value="">DevOps & Cloud</option>
-  </select>
-</div>
-  <div class="row row-cols-1 row-cols-md-3 g-4 pt-3 mt-3 col col-9" id="freelances">
-    <div class="card profil" style="width: 18rem;">
-        <img src="images/profil8 (2).jpg"class="height:200px";  alt="">
-    <div class="card-body ">
-      <h5 class="card-title">Fatou Ndiaye</h5>
-      <p class="card-text">Developpeuse Web</p>
-      <p>Spécialité en developpement <br>web et application mobiles.</p>
-      <p>
-        <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-        <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      </p>
-      <p><strong>15 000 Fcfa / h</strong></p>
-      <a href="#" class="btn btn-info">Voir le profil</a>
+<body>
+  <!-- Le contenu de la page sera ajoute ici -->
+  <!-- Bootstrap 5 via CDN : script JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Votre script JavaScript -->
+  <!-- <script src="js/main.js"></script> -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Afri<span>Talent</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+          <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">A
+              propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <a class="btn btn-info " href="">Rejoindre AfriTalent</a>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="card profil" style="width: 18rem;">
-      <img src="images/profile3.jpg" class="height:200px"; alt="">
-  <div class="card-body">
-    <h5 class="card-title">Aicha Fall</h5>
-    <p class="card-text">Design UI/UX</p>
-    <p>Création d'interface modernes <br> et intuitives pour vos projets</p>
-    <p>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-    </p>
-    <p><strong>10 000 Fcfa / h</strong></p>
-    <a href="#" class="btn btn-info">Voir le profile</a>
-  </div>
-</div>
-  <div class="card profil" style="width: 18rem;">
-      <img src="images/profile 3.jpg"class="height: 200px"; alt="">
-  <div class="card-body">
-    <h5 class="card-title">Moussa Diallo</h5>
-    <p class="card-text">Spécialité Marketing</p>
-    <p>Expert en marketing digital et stratégies de croissance</p>
-    <p>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-    </p>
-    <p><strong>15 000 Fcfa / h</strong></p>
-    <a href="#" class="btn btn-info">Voir le profile</a>
-  </div>
-</div> 
-  <div class="card profil" style="width: 18rem;">
-      <img src="images/profil9.jpg"class="height:200px"; alt="">
-  <div class="card-body">
-    <h5 class="card-title">Fatima Diop</h5>
-    <p class="card-text">Rédactrice Wed</p>
-    <p>Rédactin de contenus SEO qui captivent vos lecteurs</p>
-    <p>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-    </p>
-    <p><strong>20 000 Fcfa / h</strong></p>
-    <a href="#" class="btn btn-info">Voir le profile</a>
-  </div>
-</div>
-<div class="card profil" style="width: 18rem;">
-    <img src="images/profil8.jpg"class="height:300px;" alt="">
-  <div class="card-body">
-    <h5 class="card-title">Sophia Rachid</h5>
-    <p>Marketing Digital</p>
-    <p>stratégies pour booster la visibilité en ligne.</p>
-    <p>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-    </p>
-    <p><strong>12 000 Fcfa / h</strong></p>
-    <a href="#" class="btn btn-info">Voir le profile</a>
-  </div>
-</div>
-<div class="card profil" style="width: 18rem;">
-    <img src="images/profil7 (2).jpg"class="height:300px;" alt="">
-  <div class="card-body">
-    <h5 class="card-title">Astou Mbaye</h5>
-    <p>Développeuse mobiles</p>
-    <p>Création d'applications mobiles rapides et intuitives</p>
-    <p>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-    </p>
-    <p><strong>25 000 Fcfa / h</strong></p>
-    <a href="#" class="btn btn-info">Voir le profile</a>
-  </div>
-</div>
-<div class="card profil" style="width: 18rem;">
-    <img src="images/profil4 (2).jpg"class="height:300px; " alt="">
-  <div class="card-body">
-    <h5 class="card-title">Aicha Fofana</h5>
-    <p>Designer</p>
-    <p>Spécialitè en animation et vidéo dynamiques</p>
-    <p>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <p><strong>12 000 Fcfa / h</strong></p>
-    </p>
-    <a href="#" class="btn btn-info">Voir le profile</a>
-  </div>
-</div>
-<div class="card profil" style="width: 18rem;">
-    <img src="images/profil5 (2).jpg"class="height:300px;" alt="">
-  <div class="card-body">
-    <h5 class="card-title">Alex </h5>
-    <p>Graphiste</p>
-    <p>Designs créatif pour votre idebtité visuelle 
-    </p>
+    
+<button id="theme-toggle" class="btn btn-outline-info">
+    🌙
+</button>
+  </nav>
+  <main>
+    <section id="freelances">
+      <div>
+        <h1 class="text-center">Nos freelances</h1>
+      </div>
+      <div class="seclectionnner">
+        <button>Développement Web</button>
+          <button>Design UI/UX</button>
+          <button>Marketing Digital</button>
+          <button> Data & IA</button>
+          <button>Rédaction Tech</button>
+          <button>DevOps & Cloud</button>
+      </div>
 
-    <p>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <p><strong>10 000 Fcfa / h</strong></p>
-    </p>
-    <a href="#" class="btn btn-info">Voir le profile</a>
-  </div>
-</div>
+      <div class="row g-5 pt-3 mt-3">
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card profil" style="width: 18rem;">
+            <img  src="images/profile3.jpg" class="card-img-top " ; alt=""height="200px">
+            <div>
+              <h5>Aicha Fall</h5>
+              <p>Design UI/UX</p>
+              <p>Création d'interface modernes et intuitives pour vos projets</p>
+              <p>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              </p>
+              <p><strong>10 000 Fcfa / h</strong></p>
+              <a href="#" class="btn btn-info">Voir le profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card profil" style="width: 18rem;">
+          <img src="images/profil8 (2).jpg" class="card-img-top " ; alt="" height="200px">
+          <div>
+            <h5>Fatou Ndiaye</h5>
+            <p>Developpeuse Web</p>
+            <p>Spécialité en developpement web et application mobiles.</p>
+            <p>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+            </p>
+            <p><strong>15 000 Fcfa / h</strong></p>
+            <a href="#" class="btn btn-info">Voir le profil</a>
+          </div>
+        </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card profil" style="width: 18rem;">
+            <img src="images/profile 3.jpg" class="card-img-top " ; alt=""height="200px">
+            <div>
+              <h5>Moussa Diallo</h5>
+              <p>Spécialité Marketing</p>
+              <p>Expert en marketing digital et stratégies de croissance</p>
+              <p>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              </p>
+              <p><strong>15 000 Fcfa / h</strong></p>
+              <a href="#" class="btn btn-info">Voir le profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card profil" style="width: 18rem;">
+            <img src="images/profil9.jpg" class="card-img-top " ; alt=""height="200px">
+            <div>
+              <h5>Fatima Diop</h5>
+              <p>Rédactrice Wed</p>
+              <p>Rédactin de contenus SEO qui captivent vos lecteurs</p>
+              <p>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              </p>
+              <p><strong>20 000 Fcfa / h</strong></p>
+              <a href="#" class="btn btn-info">Voir le profile</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card profil" style="width: 18rem;">
+            <img src="images/profil8.jpg" class="card-img-top " alt="" height="200px">
+            <div>
+              <h5>Sophia Rachid</h5>
+              <p>Marketing Digital</p>
+              <p>stratégies pour booster la visibilité en ligne.</p>
+              <p>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              </p>
+              <p><strong>12 000 Fcfa / h</strong></p>
+              <a href="#" class="btn btn-info">Voir le profile</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card profil" style="width: 18rem;">
+            <img src="images/profil7 (2).jpg" class="card-img-top " alt=""height="200px">
+            <div>
+              <h5>Astou Mbaye</h5>
+              <p>Développeuse mobiles</p>
+              <p>Création d'applications mobiles rapides et intuitives</p>
+              <p>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              </p>
+              <p><strong>25 000 Fcfa / h</strong></p>
+              <a href="#" class="btn btn-info">Voir le profile</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 col-md-6">
 <div class="card profil" style="width: 18rem;">
-    <img src="images/profil6 (2).jpg"class="height:300px;" alt="">
-  <div class="card-body">
-    <h5 class="card-title">Amadou Traoré</h5>
-    <p class="card-text">Developpeur Full</p>
-    <p>Developpeuse d'applications robustes et évolution</p>
-    <p>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-      <p><strong>15 000 Fcfa / h</strong></p>
-    </p>
-    <a href="#" class="btn btn-info">Voir le profile</a>
-  </div>
-</div>
-</div>
-</section>
-</main>
-<footer>
-  <div>
-  <div class="d-flex flex-row d-flex justify-content-around bg-dark text-white">
-    <div>
-      <h1>AfriTalent</h1>
-    <p>
-      connectons les talents,<br>construisons l'avenir.
-    </p>
-    <p>
-       <a href="http:www.snapchat.com">
-            <i class="bi bi-snapchat"></i>
-          </a>
-          
-          <a href="http:www.facebook.com">
-              <i class="bi bi-facebook"></i>
-            </a>
-             <a href="http:www.instagram.com">
-            <i class="bi bi-instagram"></i>
-          </a>
-    </p>
+          <img src="images/profil4 (2).jpg" class="card-img-top  " alt=""height="200px">
+          <div>
+            <h5>Aicha Fofana</h5>
+            <p>Designer</p>
+            <p>Spécialitè en animation et vidéo dynamiques</p>
+            <p>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+            <p><strong>12 000 Fcfa / h</strong></p>
+            </p>
+            <a href="#" class="btn btn-info">Voir le profile</a>
+          </div>
+        </div>
+        </div>
+        
+
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card profil" style="width: 18rem;">
+          <img src="images/profil5 (2).jpg" class="card-img-top " alt=""height="200px">
+          <div>
+            <h5>Fallou Ndiaye</h5>
+            <p>Graphiste</p>
+            <p>Designs créatif pour votre idebtité visuelle
+            </p>
+
+            <p>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+            <p><strong>10 000 Fcfa / h</strong></p>
+            </p>
+            <a href="#" class="btn btn-info">Voir le profile</a>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-12 col-lg-4 col-md-6">
+<div class="card profil" style="width: 18rem;">
+          <img src="images/profil6 (2).jpg" class="card-img-top " alt=""height="200px">
+          <div>
+            <h5>Amadou Traoré</h5>
+            <p>Developpeur Full</p>
+            <p>Developpeuse d'applications robustes et évolution</p>
+            <p>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+            <p><strong>15 000 Fcfa / h</strong></p>
+            </p>
+            <a href="#" class="btn btn-info">Voir le profile</a>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer py-5">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-4">
+
+                <h1>Afri<span>Talent</span></h1>
+
+
+                <p>
+                    La plateforme qui connecte les talents africains
+                    aux meilleures opportunités professionnelles.
+                </p>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <h5>Liens rapides</h5>
+
+                <ul class="footer-links">
+
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="freelances.html">Freelances</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            
+
+            <div class="col-lg-4">
+
+                <h5>Suivez-nous</h5>
+
+                <div class="social-icons">
+
+                    <a href="http:www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="http:www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="http:www.snapchat.com"><i class="bi bi-snapchat"></i></a>
+
+                    <a href="http:www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="text-center mb-0">
+            © 2026 AfriTalent - Tous droits réservés.
+        </p>
+
     </div>
-    <div>
-      <h5>Liens utiles</h5>
-      <ul type="none">
-        <li><a class="text-reset text-decoration-none" href="">Accueil</a></li>
-        <li><a class="text-reset text-decoration-none" href="">Freelance</a></li>
-        <li><a class="text-reset text-decoration-none" href="">Tarifs</a></li>
-        <li><a class="text-reset text-decoration-none" href="">A propos</a></li>
-        <li><a class="text-reset text-decoration-none" href="">Blog</a></li>
-        <li><a class="text-reset text-decoration-none" href="">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h5>Ressouces</h5>
-      <p>Guides</p>
-      <p>FAQ</p>
-      <p>Devenir partenaire</p>
-      <p></p>
-      <p></p>
-    </div>
-    <div>
-      <h5>Contact</h5>
-      <p>Gueyendeyeisseu5@gmail.com</p>
-      <p>77 288 22 14</p>
-      Dakar,Sénegal
-    </div>
-  </div>
+
+<button id="backToTop" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+</button>
+
 </footer>
+<script src="js/main.js"></script>
 </body>
+
 </html>

@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Votre feuille de style personnelle -->
   <link rel="stylesheet" href="css/style.css">
+ 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,10 +22,10 @@
   <!-- Bootstrap 5 via CDN : script JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Votre script JavaScript -->
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
 
   <!-- <header></header> -->
- <nav class="navbar navbar-expand-lg"> 
+ <nav class="navbar navbar-expand-lg fixed-top"> 
 <div class="container"> 
 <a class="navbar-brand" href="index.html">Afri<span>Talent</span></a> 
 <button class="navbar-toggler" type="button" 
@@ -47,12 +48,16 @@ href="tarifs.html">Tarifs</a></li>
 propos</a></li> 
 <li class="nav-item"><a class="nav-link" 
 href="contact.html">Contact</a></li> 
+<a class="btn btn-info  btn1"href="">Rejoindre AfriTalent</a>
 </ul> 
 </div> 
 </div> 
-<div>
-  <a class="btn btn-info "href="">Rejoindre AfriTalent</a>
-</div>
+
+    
+<button id="theme-toggle" class="btn btn-outline-info">
+    🌙
+</button>
+
 
 </nav> 
 <!-- hero -->
@@ -63,31 +68,30 @@ href="contact.html">Contact</a></li>
       </div>
       <div class="mb-5">
         <a class="btn btn-info mt-5  text-center" href="">Je suis Freelance</a>
-        <a  class="btn btn-outline-info mt-5 text-center" href=""> Je cherche un Freelance</a>
+        <a  class="btn btn-outline-info mt-5 text-center" href="freelances.html"> Je cherche un Freelance</a>
       </div>
       <!-- <div class="container"> -->
       <div class="row mb-5 g-5 row row-cols-4 row-cols-md-6 g-4 pt-5 mt-5 col row-cols-4 ms-5 gap-3">
-        <div class="card anime">
-          <i class="fa-slab-press fa-regular fa-user fa-2x" style="color: rgb(116, 192, 252);"></i>
-            <h4>2500+</h4>
+        <div>
+          <h4><i class="fa-slab-press fa-regular fa-user" style="color: rgb(116, 192, 252);"></i> 2500+</h4>
             <p>freelances actif</p>
         </div>
-        <div class="card anime">
-          <i class="bi bi-buildings fa-2x" style="color: rgb(116, 192, 252);"></i>
-            <h4>800+</h4>
+        <div>
+         
+            <h4> <i class="bi bi-buildings" style="color: rgb(116, 192, 252);"></i> 800+</h4>
             <p>Entreprises clientes</p>
         </div>
-        <div class="card anime">
-          <i class="bi bi-graph-up-arrow fa-2x" style="color: rgb(116, 192, 252);"></i>
-            <h4>12000+</h4>
+        <div>
+          
+            <h4><i class="bi bi-graph-up-arrow" style="color: rgb(116, 192, 252);"></i> 12000+</h4>
             <p>Missions réaliser</p>
         </div>
-        <div class="card anime">
-          <i class="bi bi-percent fa-2x" style="color: rgb(116, 192, 252);"></i>
-            <h4>98%</h4>
+        <div>
+          
+            <h4> 98 <i class="bi bi-percent " style="color: rgb(116, 192, 252);"></i></h4>
             <p>Satisfaction client</p>
         </div>
-
+      </div>
   </div>
     </section>
      <!-- COMMENT ÇA MARCHE -->
@@ -236,54 +240,80 @@ href="contact.html">Contact</a></li>
     </div>
   </section>
   </main>
-  <footer>
-  <div>
-  <div class="d-flex flex-row d-flex justify-content-around bg-dark text-white">
-    <div>
-      <h1>AfriTalent</h1>
-    <p>
-      connectons les talents,<br>construisons l'avenir.
-    </p>
-    <p>
-       <a href="http:www.snapchat.com">
-            <i class="bi bi-snapchat"></i>
-          </a>
-          
-          <a href="http:www.facebook.com">
-              <i class="bi bi-facebook"></i>
-            </a>
-             <a href="http:www.instagram.com">
-            <i class="bi bi-instagram"></i>
-          </a>
-    </p>
+  <footer class="footer py-5">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-4">
+
+                <h1>Afri<span>Talent</span></h1>
+
+
+                <p>
+                    La plateforme qui connecte les talents africains
+                    aux meilleures opportunités professionnelles.
+                </p>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <h5>Liens rapides</h5>
+
+                <ul class="footer-links">
+
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="freelances.html">Freelances</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <h5>Suivez-nous</h5>
+
+                <div class="social-icons">
+
+                    <a href="http:www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="http:www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="http:www.snapchat.com"><i class="bi bi-snapchat"></i></a>
+
+                    <a href="http:www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="text-center mb-0">
+            © 2026 AfriTalent - Tous droits réservés.
+        </p>
+
     </div>
-    <div>
-      <h5>Liens utiles</h5>
-      <ul type="none">
-        <li><a class="text-reset text-decoration-none" href="">Accueil</a></li>
-        <li><a class="text-reset text-decoration-none" href="">Freelance</a></li>
-        <li><a class="text-reset text-decoration-none" href="">Tarifs</a></li>
-        <li><a class="text-reset text-decoration-none" href="">A propos</a></li>
-        <li><a class="text-reset text-decoration-none" href="">Blog</a></li>
-        <li><a class="text-reset text-decoration-none" href="">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h5>Ressouces</h5>
-      <p>Guides</p>
-      <p>FAQ</p>
-      <p>Devenir partenaire</p>
-      <p></p>
-      <p></p>
-    </div>
-    <div>
-      <h5>Contact</h5>
-      <p>Gueyendeyeisseu5@gmail.com</p>
-      <p>77 288 22 14</p>
-      Dakar,Sénegal
-    </div>
-  </div>
-  </footer>
+
+<button id="backToTop" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+</button>
+
+</footer>
+
+
+
+
+<script src="js/main.js"></script>
 </body>
 </html>
 
