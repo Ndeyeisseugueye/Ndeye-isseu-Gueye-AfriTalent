@@ -42,3 +42,87 @@ if (backToTopBtn) {
     });
 }
 
+// comteur
+// Animation des sections
+
+const sections = document.querySelectorAll(".fade-in");
+
+const sectionObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+sections.forEach(section => {
+    sectionObserver.observe(section);
+});
+
+
+// Compteurs animés
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries, observer) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            const counter = entry.target;
+            const target = +counter.dataset.target;
+
+            let current = 0;
+            const increment = target / 100;
+
+            const updateCounter = () => {
+
+                if (current < target) {
+
+                    current += increment;
+                    counter.textContent = Math.ceil(current);
+
+                    requestAnimationFrame(updateCounter);
+
+                } else {
+
+                    counter.textContent = target.toLocaleString();
+                }
+            };
+
+            updateCounter();
+
+            observer.unobserve(counter);
+        }
+
+    });
+
+}, {
+    threshold: 0.5
+});
+
+counters.forEach(counter => {
+    counterObserver.observe(counter);
+});
+
+// navbar qui change au scrool
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 50){
+        navbar.classList.add("scrolled");
+    }else{
+        navbar.classList.remove("scrolled");
+    }
+
+});
+
+

@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* section hero */
 #hero{
     margin-top: 0;
@@ -17,8 +16,6 @@
     text-align: center;
     color: #fff;
 }
-
-
 
 #hero h1{
     margin-top:6rem ;
@@ -68,7 +65,12 @@ body.dark-mode{
     --shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
 }
 
-
+.titre{
+    color:rgb(116, 192, 252);
+}
+.titre2{
+    color: white;
+}
 
 body{
     padding-top: 0;
@@ -77,8 +79,6 @@ body{
     font-family: var(--font-corp);
     transition:0.4s ease, color 0.4s ease;
 }
-
-
 
 .navbar{
     background-color: var(--navbar-color);
@@ -90,7 +90,6 @@ body{
 .navbar-brand{
     color: var(--text-color) !important;
 }
-
 
 #temoins,
 .profil,
@@ -144,10 +143,6 @@ span{
     color:rgb(116, 192, 252);
 }
 
-/* navbar srool */
-
-
-
 /* footer */
 .footer{
     background: var(--footer-color);
@@ -177,7 +172,21 @@ span{
 .footer-links a:hover{
     color:#8BEAF2;
 }
-
+.ressource li{
+   margin-bottom:10px; 
+}
+.ressource a{
+    color:#F5F7FA;
+    text-decoration:none;
+    transition:.3s;
+}
+.ressource{
+    list-style:none;
+    padding:0;
+}
+.ressource a:hover{
+   color:#8BEAF2;
+}
 .social-icons a{
     color:#8BEAF2;
     font-size:24px;
@@ -185,14 +194,10 @@ span{
     transition:.3s;
 }
 
-
 .footer hr{
     border-color:rgba(255,255,255,.2);
     margin:30px 0;
 }
-
-
-
 
 .anime{
     /* margin-top: 15rem; */
@@ -207,19 +212,14 @@ span{
     background-color: var(--secondary-color);
 }
 
-
-
-
 /* page1 */
 /* comment ca marche */
 #marche{
-    
     margin-top: 3rem;
 }
 
-
-
 .bentogrid{
+    
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 180px;
@@ -231,8 +231,6 @@ span{
     padding: 30px;
     color: #fff;
 }
-
-
 
 .card1{
     grid-column: span 2;
@@ -255,8 +253,6 @@ span{
     margin-top: 3rem;
 }
 
-
-
 /* catrgories de service */
 
 .categories{
@@ -274,15 +270,11 @@ span{
     gap: 3rem;
 }
 
-
-
-
 .service:hover{
     transform: translateY(-10px);
     box-shadow: 0 18px 35px rgba(18, 199, 214, .25);
     transition: 5s;
 }
-
 
 /* carroussel */
 
@@ -296,14 +288,13 @@ span{
     background: var(--card-color);
 }
 
-
 .carousel img{
     width: 120px;
     height: 120px;
     /* object-fit: cover; */
     border-radius: 50%;
+    border: 3px solid #8BEAF2;
 }
-
 
 /* boutton cta */
 
@@ -319,9 +310,6 @@ span{
      margin-bottom: 2rem;
 }
 
-
-
-
 .btninscrire{
     color: #fff;
     background-color:var(--secondary-color);
@@ -329,10 +317,6 @@ span{
     text-decoration: none;
     border-radius: 15px;
 }
-
-
-
-
 
 /* page2 */
 /* section freelance */
@@ -343,18 +327,9 @@ span{
 
 }
 
-
-
-
-
-.seclectionnner button{
-    background-color:var(--principal-color);
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    align-items: center;
-    text-align: center;
-    
+.btnselect{
+    /* align-items: center; */
+    margin-left: 5rem;
 }
 .profil {
     height: 500px;
@@ -374,15 +349,10 @@ span{
    box-shadow: var(--text-color);
 }
 
-
-
 #freelances img{
    border-radius: 50%;
+   border: 3px solid #8BEAF2;
 }
-
-
-
-
 
 /* page 3 */
 /* TARIF */
@@ -401,13 +371,10 @@ span{
      margin-bottom: 3rem;
 }
 
-
-
 .tarif:hover{
     transform: translateY(-10px);
     box-shadow: var(--text-color);
 }
-
 
 .accordion-item{
     background-color:var(--secondary-color);
@@ -422,43 +389,59 @@ span{
     margin-top: 7rem;
 }
 
-
-
 .info{
+    background: var(--secondary-color);
     color: white;
     padding: 50px;
     border-radius: 30px;
-    height: 400px;
-    width: 50%;
-
-}
-
-.info{
-    background:var(--secondary-color) ;
 }
 
 .forme{
-    /* background: white; */
-    padding: 60px;
+    
+    color: var(--text-color);
+    padding: 40px;
     border-radius: 30px;
-    width: 60%;
-    box-shadow: var(--text-color);
-
-
+    box-shadow: var(--shadow);
 }
-
 
 .form-control{
     border-radius: 15px;
-    padding: 12px;
+    padding: 14px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    border: 1px solid #ced4da;
+}
+
+.form-control::placeholder{
+    color: var(--text-color);
 }
 
 iframe{
-    padding:5px;
-    height: 80vh;
     width: 100%;
-
+    height: 400px;
+    border: 0;
+    border-radius: 30px;
 }
+
+.social-icons a{
+    color: #8BEAF2;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    color: white;
+}
+ 
+.form-select{
+    border-radius: 15px;
+    padding: 14px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    border: 1px solid #ced4da;
+}
+
 
 /* page4 */
 /* Notre Histoire */
@@ -471,12 +454,13 @@ iframe{
     margin-right: 5rem;
     border-radius: 50%;
     background-size:cover;
+    border:3px solid #8BEAF2;
 }
 
 #histoire p{
-    margin-right: 5rem;
+    
+    margin-left: 5rem;
 }
-
 
 #equipe{
    
@@ -490,13 +474,11 @@ iframe{
     border: none;
 }
 
-
 /* Nos valeurs */
 
 #valeurs{
 
 }
-
 
 .valeur{
    border-radius: 25px;
@@ -511,8 +493,6 @@ iframe{
      box-shadow: 0 20px 40px rgba(18, 199, 214, .25);
 }
 
-
-
 /* chiffres clés */
 
 .chiffre{
@@ -522,7 +502,6 @@ iframe{
     box-shadow: var(--text-color);
     padding: 20px;
 }
-
 
 /* HERO */
 @media screen and (max-width:768px){
@@ -543,7 +522,6 @@ iframe{
         align-items: center;
     }
 }
-
 
 /* navbar */
 
@@ -575,9 +553,6 @@ iframe{
     }
 } 
  
-
-
-
 /* bouton retour en haut */
 
 #backToTop{
@@ -619,30 +594,50 @@ iframe{
     align-items: center;
 }
 
-
 /* navbar qui change au scroole */
 .navbar{
-    background-color: transparent;
+    background: transparent;
     padding: 20px 0;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
 }
 
 .navbar.scrolled{
-    background-color: var(--navbar-color);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: var(--navbar-color);
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
     padding: 10px 0;
-    backdrop-filter: blur(10px);
 }
 
 .navbar-brand{
-    font-size: 3rem;
-    transition: font-size 0.3s ease;
+    font-size:3rem;
+    transition:.3s;
 }
 
 .navbar.scrolled .navbar-brand{
-    font-size: 2.4rem;
+    font-size:2.5rem;
 }
 
+/* compteur */
+.fade-in{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Les sections qui apparaissent en fondu */
+.fade-in{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show{
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
