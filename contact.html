@@ -44,8 +44,8 @@ href="tarifs.html">Tarifs</a></li>
 propos</a></li> 
 <li class="nav-item"><a class="nav-link" 
 href="contact.html">Contact</a></li> 
-<a class="btn btn-info " href="">Rejoindre AfriTalent</a>
 </ul> 
+<a class="btn btn-info " href="">Rejoindre AfriTalent</a>
 </div> 
 </div> 
 
@@ -83,12 +83,12 @@ href="contact.html">Contact</a></li>
 
                     <p>
                         <i class="bi bi-telephone-fill"></i>
-                        +221 77 123 45 67
+                        +221 77 288 22 14
                     </p>
 
                     <p>
                         <i class="bi bi-envelope-fill"></i>
-                        contact@afritalent.com
+                        afritalent255@gmail.com
                     </p>
 
                 </div>
@@ -111,45 +111,34 @@ href="contact.html">Contact</a></li>
 
         <div class="col-lg-7">
 
-            <form class="forme">
+            <form id="contactForm" class="forme">
 
-                <div class="row g-3">
+<input type="text" id="prenom" class="form-control" placeholder="Prénom">
+<small id="prenomError" class="text-danger"></small>
 
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Prénom">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Nom">
-                    </div>
+<input type="text" id="nom" class="form-control" placeholder="Nom">
+<small id="nomError" class="text-danger"></small>
+<input type="email" id="email" class="form-control" placeholder="Adresse e-mail">
+<small id="emailError" class="text-danger"></small>
 
-                    <div class="col-md-12">
-                        <input type="email" class="form-control" placeholder="Adresse e-mail">
-                    </div>
+<select id="demande" class="form-select">
+    <option value="" selected disabled>Sélectionner le type de demande</option>
+    <option value="Support">Support</option>
+    <option value="Information">Information</option>
+    <option value="Partenariat">Partenariat</option>
+</select>
+<small id="demandeError" class="text-danger"></small>
 
-                    <div class="col-12">
-                        <select name="" class="form-select">
-                          <option value="" selected disabled>Selectionner le type de demande</option>
-                        <option value="">Support</option>
-                        <option value="">Information</option>
-                        <option value="">Partenariat</option>
-                        </select>
-                    </div>
+<textarea id="message" class="form-control" rows="6" placeholder="Votre message"></textarea>
+<small id="messageError" class="text-danger"></small>
 
-                    <div class="col-12">
-                        <textarea class="form-control" rows="6" placeholder="Votre message"></textarea>
-                    </div>
+<button type="submit" class="btn btn-info px-5 py-3">
+    Envoyer le message
+</button>
 
-                    <div class="col-12 text-center">
+<p id="successMessage" class="text-success mt-3"></p>
 
-                        <button type="submit" class="btn btn-info px-5 py-3">
-                            Envoyer le message
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </form>
+</form>
 
         </div>
 
@@ -172,7 +161,7 @@ href="contact.html">Contact</a></li>
         <div class="row g-4">
 
 
-            <div class="col-lg-4">
+            <div class="col-lg-3">
 
                 <h1>Afri<span>Talent</span></h1>
 
@@ -184,7 +173,7 @@ href="contact.html">Contact</a></li>
 
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-3">
 
                 <h5>Liens rapides</h5>
 
@@ -199,21 +188,29 @@ href="contact.html">Contact</a></li>
                 </ul>
 
             </div>
+            <div class="col-lg-3">
+              <h5>Ressources</h5>
+              <ul class="ressource">
+                <li><a href="http:www.google.com">FAQ</a></li>
+                <li><a href="https://officiel.empireduweb.com/">Formation</a></li>
+                <li><a href="http:www.facebook.com">Actualités</a></li>
+                <li><a href="http:www.youtube.com">Conseil</a></li>
+                </ul>
+            </div>
 
-
-            <div class="col-lg-4">
+            <div class="col-lg-3">
 
                 <h5>Suivez-nous</h5>
 
                 <div class="social-icons">
 
-                    <a href="http:www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
 
-                    <a href="http:www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
 
-                    <a href="http:www.snapchat.com"><i class="bi bi-snapchat"></i></a>
+                    <a href="http://www.snapchat.com"><i class="bi bi-snapchat"></i></a>
 
-                    <a href="http:www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="http://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
 
                 </div>
 

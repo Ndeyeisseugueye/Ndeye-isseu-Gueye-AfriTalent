@@ -199,6 +199,15 @@ span{
     margin:30px 0;
 }
 
+.footer h5{
+    color: white;
+}
+.footer h1{
+    color: white;
+}
+
+/* page1 */
+/* animation */
 .anime{
     /* margin-top: 15rem; */
     border: none;
@@ -210,9 +219,10 @@ span{
 
 .anime{
     background-color: var(--secondary-color);
+
 }
 
-/* page1 */
+
 /* comment ca marche */
 #marche{
     margin-top: 3rem;
@@ -230,6 +240,10 @@ span{
     border-radius: 25px;
     padding: 30px;
     color: #fff;
+}
+
+.isseu h5{
+    color: #fff; 
 }
 
 .card1{
@@ -254,13 +268,6 @@ span{
 }
 
 /* catrgories de service */
-
-.categories{
-    
-    margin-top: 8rem;
-    
-}
-
 .service{
     box-shadow: var(--text-color);
     border-radius: 25px;
@@ -279,10 +286,8 @@ span{
 /* carroussel */
 
 #temoins{
-    /* height: 72vh; */
     text-align: center;
     width: 100% ;
-    /* padding: 20px; */
     border-radius: 30px;
     box-shadow: var(--text-color);
     background: var(--card-color);
@@ -327,16 +332,10 @@ span{
 
 }
 
-.btnselect{
-    /* align-items: center; */
-    margin-left: 5rem;
-}
 .profil {
-    height: 500px;
-    border-radius: 40px;
+    border-radius: 10px;
     transition: 4s;
     box-shadow: var(--text-color);
-    padding: 40px;
     margin-bottom: 2rem;
 }
 
@@ -356,31 +355,31 @@ span{
 
 /* page 3 */
 /* TARIF */
-
-#tarifs{
-    margin-left: 6rem;
-    margin-top: 7rem;
-}
 .tarif {
-    /* background-color: #fff; */
-    /* padding: 30px; */
     border-radius: 30px;
     transition: 4s;
-    box-shadow: var(--text-color);
+    box-shadow: var(--shadow);
      border: 3px solid #8beaf2;
-     margin-bottom: 3rem;
+    
 }
 
 .tarif:hover{
     transform: translateY(-10px);
     box-shadow: var(--text-color);
 }
+.tarif {
+  border-radius: 15px;
+  transition: 0.3s;
+}
 
-.accordion-item{
-    background-color:var(--secondary-color);
-    color: #fff;
-    
-   
+.tarif:hover {
+  transform: translateY(-8px);
+}
+/* Bouton de l'accordéon */
+.accordion-button {
+    background-color: #8ed5e3;
+    color: white;
+    font-weight: bold;
 }
 
 /* page5 */
@@ -414,6 +413,7 @@ span{
 
 .form-control::placeholder{
     color: var(--text-color);
+
 }
 
 iframe{
@@ -422,6 +422,7 @@ iframe{
     border: 0;
     border-radius: 30px;
 }
+
 
 .social-icons a{
     color: #8BEAF2;
@@ -457,10 +458,12 @@ iframe{
     border:3px solid #8BEAF2;
 }
 
-#histoire p{
-    
-    margin-left: 5rem;
-}
+/* {
+    margin-right: 8em;
+    padding: 0 10px 10px;
+    margin-top: 20px;
+   
+} */
 
 #equipe{
    
@@ -503,56 +506,128 @@ iframe{
     padding: 20px;
 }
 
-/* HERO */
-@media screen and (max-width:768px){
-    #hero{
-        padding: 80px 20px;
-        text-align: center;
-    }
-    #hero h1{
-        font-size: 2.5rem;
-    }
-    #hero p{
-        font-size: 1rem;
-    }
-    #hero a{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-}
 
-/* navbar */
-
-@media screen and (max-width:768px){
-    .navbar{
-        text-align: center;
-        gap: 10px;
-        padding-top: 15px;
-    }
-    .navbar .btn{
-        margin-top: 10px;
-    }
-}
-
-
-
-
-/* section hero */
-@media screen and (max-width:375px){
-    .navbar{
-        text-align:center;
-        gap: 10px;
-        padding-top: 15px;
-
-
-    }
-    .navbar btn{
-        margin-top: 10px;
-    }
-} 
+/* responsive */
  
+/* Tablette */
+@media (max-width: 768px) {
+    .bentogrid {
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        margin-left: 0;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .profil,
+    .service,
+    .tarif,
+    .valeur {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #hero {
+        padding: 60px 15px;
+    }
+}
+@media (max-width: 768px) {
+
+    #tarifs {
+        margin-left: 0 !important;
+        padding: 40px 15px !important;
+    }
+
+    .profil {
+        height: auto !important;
+        padding: 20px !important;
+    }
+
+    .tarif {
+        width: 100% !important;
+    }
+
+    .service {
+        margin-left: 0 !important;
+    }
+
+    .valeur,
+    .chiffre,
+    .notre {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+}
+@media (max-width: 768px) {
+
+    #histoire img {
+        margin: 20px auto;
+        width: 200px;   /* taille adaptée mobile */
+        height: 200px;
+    }
+
+    #histoire {
+        text-align: center;
+    }
+}
+.bentogrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(180px, auto);
+    gap: 20px;
+}
+
+/* cards */
+.isseu {
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.card1 { grid-column: span 2; }
+.card4 { grid-column: span 2; }
+
+/*  TABLETTE */
+@media (max-width: 768px) {
+    .bentogrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card1,
+    .card4 {
+        grid-column: span 2;
+    }
+}
+
+/*  MOBILE */
+@media (max-width: 480px) {
+    .bentogrid {
+        grid-template-columns: 1fr;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        grid-column: span 1;
+    }
+}
+
 /* bouton retour en haut */
 
 #backToTop{

@@ -32,11 +32,11 @@
           <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
           <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
           <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">A
-              propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <a class="btn btn-info " href="">Rejoindre AfriTalent</a>
+          
         </ul>
+        <a class="btn btn-info" href="">Rejoindre AfriTalent</a>
       </div>
     </div>
     
@@ -44,27 +44,30 @@
     🌙
 </button>
   </nav>
-  <main>
-    <section id="freelances">
+<main>
+  <section id="freelances">
 
-      <div>
-        <h1 class="text-center">Nos freelances</h1>
-      </div class="">
-      <div>
-        <a class="btn btn-info mt-5  text-center" href="">Tous</a>
-        <a  class="btn btn-outline-info mt-5 text-center" href="freelances.html">Développement Web</a>
-        <a  class="btn btn-outline-info mt-5 text-center" href="freelances.html">Design UI/UX</a>
-        <a  class="btn btn-outline-info mt-5 text-center" href="freelances.html">Marketing Digital</a>
-        <a  class="btn btn-outline-info mt-5 text-center" href="freelances.html">Data & IA</a>
-        <a  class="btn btn-outline-info mt-5 text-center" href="freelances.html">Rédaction Tech</a>
-        <a  class="btn btn-outline-info mt-5 text-center" href="freelances.html">DevOps & Cloud</a>
-          
+    <div>
+      <h1 class="text-center">Nos freelances</h1>
+
+      <div class="text-center mt-4 mb-4 filter-container">
+        <label for="categorySelect"></label>
+        <select name="" id="categorySelect">
+          <option value="all">Tous les freelances</option>
+          <option value="dev">Développement Web</option>
+          <option value="design">Design UI/UX</option>
+          <option value="marketing">Marketing Digital</option>
+          <option value="data">Data & IA</option>
+          <option value="redaction">Rédaction Tech</option>
+          <option value="devops">DevOps & Cloud</option>
+        </select>
       </div>
 
       <div class="row g-5 pt-3 mt-3">
-        <div class="col-12 col-lg-4 col-md-6">
-          <div class="card profil" style="width: 18rem;">
-            <img  src="images/profile3.jpg" class="card-img-top " ; alt=""height="200px">
+
+        <div class="col-12 col-lg-4 col-md-6 freelance-list">
+          <div class="card profil" data-cat="design" style="width: 18rem;">
+            <img src="images/profile3.jpg" class="card-img-top" alt="" height="250px">
             <div>
               <h5>Aicha Fall</h5>
               <p>Design UI/UX</p>
@@ -77,36 +80,43 @@
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
               </p>
               <p><strong>10 000 Fcfa / h</strong></p>
-              <a href="#" class="btn btn-info">Voir le profile</a>
+              <a href="#" class="btn btn-info w-100 mt-3">Voir le profile</a>
             </div>
           </div>
         </div>
+
         <div class="col-12 col-lg-4 col-md-6">
-          <div class="card profil" style="width: 18rem;">
-          <img src="images/profil8 (2).jpg" class="card-img-top " ; alt="" height="200px">
-          <div>
-            <h5>Fatou Ndiaye</h5>
-            <p>Developpeuse Web</p>
-            <p>Spécialité en developpement web et application mobiles.</p>
-            <p>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-            </p>
-            <p><strong>15 000 Fcfa / h</strong></p>
-            <a href="#" class="btn btn-info">Voir le profil</a>
+          <div class="card profil" data-cat="dev" style="width: 18rem;">
+            <img src="images/profil8 (2).jpg" class="card-img-top" alt="" height="250px">
+
+            <div>
+              <h5>Fatou Ndiaye</h5>
+              <p>Developpeuse Web</p>
+              <p>Spécialité en developpement web et application mobiles.</p>
+
+              <p>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              </p>
+
+              <p><strong>15 000 Fcfa / h</strong></p>
+              <a href="#" class="btn btn-info w-100 mt-3">Voir le profil</a>
+            </div>
           </div>
         </div>
-        </div>
+
         <div class="col-12 col-lg-4 col-md-6">
-          <div class="card profil" style="width: 18rem;">
-            <img src="images/profile 3.jpg" class="card-img-top " ; alt=""height="200px">
+          <div class="card profil" data-cat="marketing" style="width: 18rem;">
+            <img src="images/profile 3.jpg" class="card-img-top" alt="" height="250px">
+
             <div>
               <h5>Moussa Diallo</h5>
               <p>Spécialité Marketing</p>
               <p>Expert en marketing digital et stratégies de croissance</p>
+
               <p>
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
@@ -114,18 +124,22 @@
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
               </p>
+
               <p><strong>15 000 Fcfa / h</strong></p>
-              <a href="#" class="btn btn-info">Voir le profile</a>
+              <a href="#" class="btn btn-info w-100 mt-3">Voir le profile</a>
             </div>
           </div>
         </div>
+
         <div class="col-12 col-lg-4 col-md-6">
-          <div class="card profil" style="width: 18rem;">
-            <img src="images/profil9.jpg" class="card-img-top " ; alt=""height="200px">
+          <div class="card profil" data-cat="redaction" style="width: 18rem;">
+            <img src="images/profil9.jpg" class="card-img-top" alt="" height="250px">
+
             <div>
               <h5>Fatima Diop</h5>
               <p>Rédactrice Wed</p>
-              <p>Rédactin de contenus SEO qui captivent vos lecteurs</p>
+              <p>Rédaction de contenus SEO qui captivent vos lecteurs</p>
+
               <p>
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
@@ -133,19 +147,22 @@
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
               </p>
+
               <p><strong>20 000 Fcfa / h</strong></p>
-              <a href="#" class="btn btn-info">Voir le profile</a>
+              <a href="#" class="btn btn-info w-100 mt-3">Voir le profile</a>
             </div>
           </div>
-
         </div>
+
         <div class="col-12 col-lg-4 col-md-6">
-          <div class="card profil" style="width: 18rem;">
-            <img src="images/profil8.jpg" class="card-img-top " alt="" height="200px">
+          <div class="card profil" data-cat="marketing" style="width: 18rem;">
+            <img src="images/profil8.jpg" class="card-img-top" alt="" height="250px">
+
             <div>
               <h5>Sophia Rachid</h5>
               <p>Marketing Digital</p>
               <p>stratégies pour booster la visibilité en ligne.</p>
+
               <p>
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
@@ -153,19 +170,22 @@
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
               </p>
+
               <p><strong>12 000 Fcfa / h</strong></p>
-              <a href="#" class="btn btn-info">Voir le profile</a>
+              <a href="#" class="btn btn-info w-100 mt-3">Voir le profile</a>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-lg-4 col-md-6">
-          <div class="card profil" style="width: 18rem;">
-            <img src="images/profil7 (2).jpg" class="card-img-top " alt=""height="200px">
+          <div class="card profil" data-cat="dev" style="width: 18rem;">
+            <img src="images/profil7 (2).jpg" class="card-img-top" alt="" height="250px">
+
             <div>
               <h5>Astou Mbaye</h5>
               <p>Développeuse mobiles</p>
               <p>Création d'applications mobiles rapides et intuitives</p>
+
               <p>
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
@@ -173,78 +193,87 @@
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
                 <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
               </p>
+
               <p><strong>25 000 Fcfa / h</strong></p>
-              <a href="#" class="btn btn-info">Voir le profile</a>
+              <a href="#" class="btn btn-info w-100 mt-3">Voir le profile</a>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-lg-4 col-md-6">
-<div class="card profil" style="width: 18rem;">
-          <img src="images/profil4 (2).jpg" class="card-img-top  " alt=""height="200px">
-          <div>
-            <h5>Aicha Fofana</h5>
-            <p>Designer</p>
-            <p>Spécialitè en animation et vidéo dynamiques</p>
-            <p>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-            <p><strong>12 000 Fcfa / h</strong></p>
-            </p>
-            <a href="#" class="btn btn-info">Voir le profile</a>
-          </div>
-        </div>
-        </div>
-        
+          <div class="card profil" data-cat="design" style="width: 18rem;">
+            <img src="images/profil4 (2).jpg" class="card-img-top" alt="" height="250px">
 
-        <div class="col-12 col-lg-4 col-md-6">
-          <div class="card profil" style="width: 18rem;">
-          <img src="images/profil5 (2).jpg" class="card-img-top " alt=""height="200px">
-          <div>
-            <h5>Fallou Ndiaye</h5>
-            <p>Graphiste</p>
-            <p>Designs créatif pour votre idebtité visuelle
-            </p>
+            <div>
+              <h5>Aicha Fofana</h5>
+              <p>Designer</p>
+              <p>Spécialité en animation et vidéo dynamiques</p>
 
-            <p>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-            <p><strong>10 000 Fcfa / h</strong></p>
-            </p>
-            <a href="#" class="btn btn-info">Voir le profile</a>
+              <p>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              </p>
+
+              <p><strong>12 000 Fcfa / h</strong></p>
+              <a href="#" class="btn btn-info w-100 mt-3">Voir le profile</a>
+            </div>
           </div>
-        </div>
         </div>
 
         <div class="col-12 col-lg-4 col-md-6">
-<div class="card profil" style="width: 18rem;">
-          <img src="images/profil6 (2).jpg" class="card-img-top " alt=""height="200px">
-          <div>
-            <h5>Amadou Traoré</h5>
-            <p>Developpeur Full</p>
-            <p>Developpeuse d'applications robustes et évolution</p>
-            <p>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-              <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
-            <p><strong>15 000 Fcfa / h</strong></p>
-            </p>
-            <a href="#" class="btn btn-info">Voir le profile</a>
+          <div class="card profil" data-cat="design" style="width: 18rem;">
+            <img src="images/profil5 (2).jpg" class="card-img-top" alt="" height="250px">
+
+            <div>
+              <h5>Fallou Ndiaye</h5>
+              <p>Graphiste</p>
+              <p>Designs créatifs pour votre identité visuelle</p>
+
+              <p>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              </p>
+
+              <p><strong>10 000 Fcfa / h</strong></p>
+              <a href="#" class="btn btn-info w-100 mt-3">Voir le profile</a>
+            </div>
           </div>
         </div>
+
+        <div class="col-12 col-lg-4 col-md-6">
+          <div class="card profil" data-cat="dec" style="width: 18rem;">
+            <img src="images/profil6 (2).jpg" class="card-img-top" alt="" height="250px">
+
+            <div>
+              <h5>Amadou Traoré</h5>
+              <p>Developpeur Full</p>
+              <p>Développement d'applications robustes et évolutives</p>
+
+              <p>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(252, 212, 67);"></i>
+              </p>
+
+              <p><strong>15 000 Fcfa / h</strong></p>
+              <a href="#" class="btn btn-info w-100 mt-3">Voir le profile</a>
+            </div>
+          </div>
         </div>
-        
+
       </div>
-    </section>
-  </main>
+    </div>
+
+  </section>
+</main>
   
   <footer class="footer py-5">
 
@@ -253,7 +282,7 @@
         <div class="row g-4">
 
 
-            <div class="col-lg-4">
+            <div class="col-lg-3">
 
                 <h1>Afri<span>Talent</span></h1>
 
@@ -265,7 +294,7 @@
 
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-3">
 
                 <h5>Liens rapides</h5>
 
@@ -280,26 +309,36 @@
                 </ul>
 
             </div>
-
+            <div class="col-lg-3">
+              <h5>Ressources</h5>
+              <ul class="ressource">
+                <li><a href="http://www.google.com">FAQ</a></li>
+                <li><a href="https://officiel.empireduweb.com/">Formation</a></li>
+                <li><a href="http://www.facebook.com">Actualités</a></li>
+                <li><a href="http://www.youtube.com">Conseil</a></li>
+                </ul>
+            </div>
             
 
-            <div class="col-lg-4">
+            <div class="col-lg-3">
 
                 <h5>Suivez-nous</h5>
 
                 <div class="social-icons">
 
-                    <a href="http:www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="http://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
 
-                    <a href="http:www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
 
-                    <a href="http:www.snapchat.com"><i class="bi bi-snapchat"></i></a>
+                    <a href="http://www.snapchat.com"><i class="bi bi-snapchat"></i></a>
 
-                    <a href="http:www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="http://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
 
                 </div>
 
             </div>
+            
+
 
         </div>
 
@@ -318,5 +357,4 @@
 </footer>
 <script src="js/main.js"></script>
 </body>
-
 </html>
